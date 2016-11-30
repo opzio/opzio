@@ -77,7 +77,7 @@ def setup_logging(args, version):
     set_log_level(logger, args)
     logfile = args.logfile
     if not logfile:
-        logfile = '~/.wakatime.log'
+        logfile = '~/.opzio.log'
     handler = logging.FileHandler(os.path.expanduser(logfile))
     formatter = JsonFormatter(datefmt='%Y/%m/%d %H:%M:%S %z')
     formatter.setup(

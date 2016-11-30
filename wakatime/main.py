@@ -77,11 +77,11 @@ def parseConfigFile(configFile=None):
     # get config file location from ENV
     home = os.environ.get('WAKATIME_HOME')
     if not configFile and home:
-        configFile = os.path.join(os.path.expanduser(home), '.wakatime.cfg')
+        configFile = os.path.join(os.path.expanduser(home), '.opzio.cfg')
 
     # use default config file location
     if not configFile:
-        configFile = os.path.join(os.path.expanduser('~'), '.wakatime.cfg')
+        configFile = os.path.join(os.path.expanduser('~'), '.opzio.cfg')
 
     configs = configparser.SafeConfigParser()
     try:
